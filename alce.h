@@ -1,0 +1,33 @@
+typedef struct usuario Usuario;
+
+
+Usuario* cria (void);
+void insere (Usuario* lista);
+void imprime_tudo (Usuario* lista);
+void imprime (Usuario* lista);
+void imprime_para_amigos(int x);
+Usuario* busca (Usuario* lista, int x, char bosta[121]);
+void alterar (Usuario* lista, Usuario* usuario_logado, int x);
+void apagar (Usuario* lista, Usuario* usuario_logado, int x);
+void apagar_tudo(Usuario *lista);
+void login (Usuario* lista);
+int menu_login (void);
+void salvar(Usuario *lista);
+void recuperar(Usuario *lista);
+void recuperarDeVerdade(Usuario * lista, FILE *save, FILE *save_amigos, FILE *save_sonic, FILE *save_msg);
+void menu_usuario(Usuario* usuario_logado, int j);
+void solicitar_amigo(Usuario* usuario_logado, int fodase);
+void print_amigos(Usuario* usuario_logado);
+void print_sonic(Usuario* usuario_logado);
+void add_amigo(Usuario* usuario_logado, int fodase, int x);
+Usuario* busca_codigo(int bosta);
+void grafo_geral(void);
+void add(int qqpessoas);
+void procurar(void);
+void dijkstra(int vertices,int origem,int destino,int *custos);
+void apagar_amigo(Usuario *usuario_logado, int fodase);
+void maiuscula(int cara);
+void master_blaster_fucking_menu(void);
+int config(Usuario* usuario_logado);
+void enviar_mensagens(Usuario *usuario_logado, int fodase);
+void print_mensagens(Usuario* usuario_logado);
